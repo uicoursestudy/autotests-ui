@@ -1,6 +1,6 @@
 from playwright.sync_api import sync_playwright
 
-def test_succesful_registration():
+def test_successful_registration():
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=False)
         context = browser.new_context()
